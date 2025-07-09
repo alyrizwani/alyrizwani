@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    background-color: black;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    /* overflow: scroll; */
+    display: flex;
+    color: white;
+}
+
+#slide1 {
+    width: 100vw;
+    /* overflow: hidden; */
+}
+#name h1 {
+    font-size: 230px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    margin: 0;
+    margin-top: 90px;
+
+}
+
+#name {
+    margin-top: 0px;
+    animation: top2center 1s ease-out;
+}
+
+#portfolioText {
+    font-size: 126px;
+    text-align: center;
+    color: white;
+    /* -webkit-text-stroke: 1px white; */
+    margin-top: -220px;
+    animation: left2center 1s ease;
+}
+
+#portfolioText #outline {
+    position: relative;
+    background-color: transparent;
+    font-size: 189px;
+    text-align: center;
+    color: transparent;
+    /* color: white; */
+    -webkit-text-stroke: 1px white;
+    margin-top: -437px;
+    z-index: 10;
+}
+
+/* #portfolioText #outline h2{
+    position: relative;
+    z-index: 1;
+} */
+.image img {
+    margin: auto;
+    background-color: transparent;
+    margin-top: -560px;
+    margin-left: 430px;
+    border-radius: 370px;
+    height: 800px;
+    /* animation: bottom2center 1s ease; */
+}
+
+.image {
+
+    position: absolute;
+    z-index: 0;
+    margin-top: -160px;
+    animation: bottom2center 1s ease-out;
+}
+
+.arrow a img {
+    width: 30px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    top: -372px;
+    z-index: 11;
+    transition: transform 1s, width 1s;
+    animation: arrow 1s ease-in-out infinite alternate;
+}
+
+.arrow a img:active {
+    width: 25px;
+}
+
+/* Animations */
+@keyframes top2center {
+    from {
+        margin-right: -350px;
+    }
+
+    to {
+        /* text-align: center; */
+        margin-right: 0;
+        /* transition: 0.5s ease; */
+    }
+
+}
+
+@keyframes left2center {
+    from {
+        margin-left: -600px;
+        margin-top: -50px;
+        /* margin-top: 0px; */
+    }
+
+    to {
+        text-align: center;
+        margin-top: -220px;
+    }
+}
+
+@keyframes bottom2center {
+    from {
+        margin-top: 100px;
+    }
+
+    to {
+        /* margin-top: -160px; */
+        margin-top: -160px;
+    }
+}
+
+@keyframes arrow {
+    from {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+

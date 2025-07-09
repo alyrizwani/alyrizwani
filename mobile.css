@@ -1,0 +1,202 @@
+@media (max-width:412px) {
+
+    /* .image img {
+        position: relative;
+        float: right;
+        background-color: transparent;
+        margin-top: -560px;
+        margin-left: 430px;
+        border-radius: 370px;
+        height: 800px;
+    } */
+    #name h1 {
+        position: relative;
+        background-color: transparent;
+        font-size: 100px;
+        text-align: left;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        margin: 0;
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    #name {
+        margin-top: 20px;
+        animation: top2center 1s ease-out;
+    }
+
+    #portfolioText {
+        font-size: 40px;
+        text-align: left;
+        color: white;
+        /* -webkit-text-stroke: 1px white; */
+        margin-top: -60px;
+        animation: portfolio 1s ease;
+    }
+
+    #portfolioText #outline {
+        /* position: relative; */
+        background-color: transparent;
+        font-size: 60px;
+        text-align: left;
+        color: transparent;
+        /* color: white; */
+        -webkit-text-stroke: 1px white;
+        margin-top: -140px;
+        z-index: 10;
+        /* animation: outline 1s ease-out; */
+    }
+
+    .image img {
+        position: relative;
+        float: left;
+        top: 560px;
+        margin-left: 40px;
+        /* margin: auto; */
+        /* background-color: transparent; */
+        /* margin-top: -560px;
+        margin-left: 430px; */
+        border-radius: 370px;
+        height: 400px;
+        /* animation: bottom2center 1s ease; */
+    }
+
+    .arrow a img {
+        width: 30px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        top: 0;
+        z-index: 11;
+        /* background-color: gray;
+        border-radius: 30px; */
+        transition: transform 1s, width 1s;
+        /* animation: arrow 1s ease-in-out infinite alternate; */
+    }
+
+    .nav_mobile {
+        background-color: #00000090;
+        padding: 10px 30px;
+        border-radius: 50px;
+        box-shadow: 1px 0px 10px 1px rgb(255 255 255 / 64%);
+        animation: navbar 0.8s ease-out;
+        width: 66vw;
+        margin: auto;
+        margin-top: 50px;
+        
+    }
+    @keyframes navbar{
+        from {
+            margin-top: 0;
+        }
+    
+        to {
+            margin: 50px;
+        }
+    
+      }
+
+    .navfix {
+        position: sticky;
+        top: 50px;
+        z-index: 12;
+        margin-bottom: -70px;
+
+    }
+
+    /* Table of Content */
+    #slide2 {
+        padding: 20px;
+    }
+
+    .arrow-left a img {
+        width: 20px;
+        position: relative;
+        float: left;
+        top: 250px;
+        cursor: pointer;
+        margin-left: -35px;
+        position: fixed;
+        /* margin-top: -26px; */
+        animation: arrow 0.8s ease-in-out infinite alternate, arrow-left 3s ease-out;
+
+    }
+
+    .heading p {
+        width: 75vw;
+        line-height: 32px;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+
+    .grid-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 columns */
+        gap: 20px;
+        /* space between items */
+        list-style: none;
+        /* remove bullets */
+        padding: 0;
+    }
+
+    .skills,
+    .Projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .school {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        padding: 0;
+        line-height: 30px;
+    }
+}
+
+/* Mobile Animations */
+@keyframes profile {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 350px;
+    }
+}
+
+@keyframes portfolio {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: -60px;
+    }
+}
+
+@keyframes top2center {
+    from {
+        margin-top: -30px;
+    }
+
+    to {
+        /* text-align: center; */
+        margin-top: 20px;
+        /* transition: 0.5s ease; */
+    }
+
+}
