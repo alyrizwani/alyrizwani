@@ -98,10 +98,12 @@
       }
 
     .navfix {
-        position: sticky;
-        top: 50px;
+       position: sticky;
+        top: 60px;
         z-index: 12;
         margin-bottom: -70px;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
 
     }
 
